@@ -13,14 +13,14 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
  routes = [
-   { pattern = "dk.bsod.win", custom_domain = true },
-   { pattern = "dkquay.bsod.win", custom_domain = true },
-   { pattern = "dkgcr.bsod.win", custom_domain = true },
-   { pattern = "dkk8s-gcr.bsod.win", custom_domain = true },
-   { pattern = "dkk8s.bsod.win", custom_domain = true },
-   { pattern = "dkghcr.bsod.win", custom_domain = true },
-   { pattern = "dkecr.bsod.win", custom_domain = true },
-   { pattern = "dkcloudsmith.bsod.win", custom_domain = true },
+   { pattern = "docker.bsod.win", custom_domain = true },
+   { pattern = "quay.bsod.win", custom_domain = true },
+   { pattern = "gcr.bsod.win", custom_domain = true },
+   { pattern = "k8s-gcr.bsod.win", custom_domain = true },
+   { pattern = "k8s.bsod.win", custom_domain = true },
+   { pattern = "ghcr.bsod.win", custom_domain = true },
+   { pattern = "ecr.bsod.win", custom_domain = true },
+   { pattern = "cloudsmith.bsod.win", custom_domain = true },
  ]
 
 [env.production.vars]
@@ -29,7 +29,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-route = { pattern = "dk-staging.bsod.win", custom_domain = true }
+route = { pattern = "docker-staging.bsod.win", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"

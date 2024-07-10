@@ -7,17 +7,17 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  "dk.bsod.win": dockerHub,
-  "dkquay.bsod.win": "https://quay.io",
-  "dkgcr.bsod.win": "https://gcr.io",
-  "dkk8s-gcr.bsod.win": "https://k8s.gcr.io",
-  "dkk8s.bsod.win": "https://registry.k8s.io",
-  "dkghcr.bsod.win": "https://ghcr.io",
-  "dkcloudsmith.bsod.win": "https://docker.cloudsmith.io",
-  "dkecr.bsod.win": "https://public.ecr.aws",
+  "docker.bsod.win": dockerHub,
+  "quay.bsod.win": "https://quay.io",
+  "gcr.bsod.win": "https://gcr.io",
+  "k8s-gcr.bsod.win": "https://k8s.gcr.io",
+  "k8s.bsod.win": "https://registry.k8s.io",
+  "ghcr.bsod.win": "https://ghcr.io",
+  "cloudsmith.bsod.win": "https://docker.cloudsmith.io",
+  "ecr.bsod.win": "https://public.ecr.aws",
 
   // staging
-  "dk-staging.bsod.win": dockerHub,
+  "docker-staging.bsod.win": dockerHub,
 };
 
 function routeByHosts(host) {
